@@ -1,0 +1,92 @@
+<nav role="navigation" class="navbar navbar-inverse">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="#" class="navbar-brand">VistA Viewer</a>
+  </div>
+  <!-- Collection of nav links and other content for toggling -->
+  <div id="navbarCollapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right" id="navList">
+      <li id="dd_nav"><a href="#">Data Dictionary</a></li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components<b class="caret"></b></a>
+      <ul class="dropdown-menu" id="navDropdownComponents">
+        <li id="rpc_nav"><a href="#">Remote Procedure Call</a></li>
+        <li id="routine_nav"><a href="#">Routine</a></li>
+        <li id="option_nav"><a href="#">Option</a></li>
+        <li id="securityKey_nav"><a href="#">Security Key</a></li>
+        <li id="parameterDefinition_nav"><a href="#">Parameter Definition</a></li>	
+      </ul>
+      </li>
+      <li id="patch_nav"><a href="#">Patch</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Main body -->
+<div id="content">
+  <div class="container-fluid">
+    <div class="row-fluid " >
+      <div class="col-md-4" id="patch_SelectionPane" style="display: none"> </div>
+      <div class="col-md-4" id="patch_SummaryPane" style="display: none"> </div>
+      <div class="col-md-4" id="rpc_SelectionPane" style="display: none"> </div>
+      <div class="col-md-4" id="dd_SelectionPane" style="display: none"> </div>
+      <div class="col-md-4" id="other_SelectionPane" style="display: none"> </div>
+      <div class="col-md-8" id="patchRoutineList_Container" style="display: none"> </div>
+      <div class="col-md-8" id="ddData_Container" style="display: none"> </div>
+      <div class="col-md-8" id="ddFieldDetail_Container" style="display: none"> </div>
+      <div class="col-md-8" id="routine_Container"  style="display: none"> </div>
+      <div class="col-md-8" id="rpc_Container"  style="display: none"> </div>
+      <div class="col-md-8" id="info_Container"  style="display: none"> </div>
+
+      <!-- RPC Tester Form -->
+      <div class="modal fade" id="RPCTesterForm"  role="dialog">   </div>
+    </div>
+  </div> <!-- container -->
+</div>
+
+<!-- Bootstrap core JavaScript
+ ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!--
+    <script src="/bootstrap3/assets/js/jquery.js"></script>
+    <script src="/bootstrap3/dist/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="/dataTables/jquery.dataTables.js"></script>
+    <script type="text/javascript" language="javascript" src="/dataTables/dataTables.bootstrap.js"></script>
+-->
+
+<link href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+<link href="//cdn.datatables.net/plug-ins/e9421181788/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+
+<script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
+<script src="//cdn.datatables.net/plug-ins/505bef35b56/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+<!--
+  VistA Patch Viewer
+  Author: Nikolay Topalov
+
+  Copyright 2014 Nikolay Topalov
+  Copyright 2017 Sam Habiel
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+  http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!-- NavBar header -->
+

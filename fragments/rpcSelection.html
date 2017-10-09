@@ -1,0 +1,76 @@
+<div > 
+	<div class="panel panel-primary ">
+			
+		<div class="panel-heading">
+			<h3 class="panel-title">Select VistA Remote Procedure Call</h3>
+		</div>
+		
+		<div class="panel-body ">						
+			<form class="form-inline" role="form" id="formRPCSelection">			
+				<div class="row">
+					<div class="form-group">
+						<label for="rpcIENFrom">IEN between</label>					
+						<input type="text" class="form-control" id="rpcIENFrom" placeholder="from"/>
+						
+						<label for="rpcIENTo">and</label>
+						<input type="text"  class="form-control" id="rpcIENTo" placeholder="to"/>	
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group">
+						<label for="rpcNameStart">Name starts with</label>
+						<input type="text"  class="form-control" id="rpcNameStart" placeholder="starts"/>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group ">
+						<label for="rpcNameContain">Name contains</label>
+						<input type="text" class="form-control" id="rpcNameContain" placeholder="contains"/>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group ">								
+						<label for="rpcRoutine" >Routine starts with</label>							
+						<input type="text"  class="form-control" id="rpcRoutine" placeholder="routine"/>
+					</div>
+				</div>
+			
+				<div class="row">		
+					<div class="checkbox">
+						<label  for="rpcAlphaSort">
+							<input type="checkbox" id="rpcAlphaSort" /> Alpha Sort
+						</label>
+					</div>
+					
+					<div class="checkbox">
+						<label  for="rpcSingleLine">
+							<input type="checkbox" id="rpcSingleLine" /> Output in Single Line
+						</label>
+					</div>
+						
+					<div class="checkbox">						
+							
+						<label for="rpcShowIEN"> 
+							<input type="checkbox" id="rpcShowIEN" /> Show RPC IEN 
+						</label>									 
+					</div>
+				</div>
+			
+				<div >
+					<button type="submit" class="btn btn-primary" id="btnShowRPCList" 											
+							data-loading-text="Searching...">Search for RPC(s)									
+					</button>
+				</div>
+		
+			</form>
+								
+			<div class="scrollable-list" id="rpcList">
+			</div>
+											
+		</div>
+	</div>	
+
+</div> <!-- left pane -->

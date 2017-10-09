@@ -1,0 +1,47 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header" >
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h4 class="modal-title" id="RPCTesterFormTitle" >RPC Tester</h4>
+	  </div>
+	  <div class="modal-body" id="RPCTesterFormBody">
+		<form role="form" class="form-horizontal" id="RPCTester">
+			<div class="row">
+				<div class="col-sm-3 form-group">
+					<label class="sr-only" for="DUZ">DUZ</label>
+					<input type="text" class="form-control" id="DUZ" 
+							placeholder="Enter DUZ" data-toggle="popover" data-content="User DUZ" autofocus/>
+				</div>
+				<div class="col-sm-3 form-group">
+					<label class="sr-only" for="Division">User Division</label>
+					<input type="text" class="form-control" id="Division" 
+							placeholder="Enter Division" data-toggle="popover" data-content="User division id"/>
+				</div>
+				<div class="col-sm-6 form-group">
+					<label class="sr-only" for="RPCContextId">RPC Context</label>
+					<input type="text" class="form-control" id="RPCContextId"
+							placeholder="Enter RPC context" placeholder="Enter DUZ" 
+							data-toggle="popover" data-content="Context in which the RPC will be executed."/>
+				</div>
+			</div>
+			
+			<div  id="RPCTesterParams" > </div>
+			
+			
+			<div class="panel panel-primary">				
+				<div class="panel-heading">
+					
+					<h1 class="panel-title" >Result</h1>
+											
+				</div>
+				<div id="RPCTesterResult"  class="scrollable-result"> </div>
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary" id="RPCExecuteBtn">Execute</button>
+			</div>
+		</form>		
+	  </div>
+	</div>
+</div>

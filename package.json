@@ -1,0 +1,26 @@
+{
+  "name": "ewd-vista-viewer",
+  "engines": {
+    "node": ">=6"
+  },
+  "version": "0.0.1",
+  "description": "Panorama: VistA Viewer Application",
+  "main": "index.js",
+  "author": "Nikolay Topalov & Sam Habiel",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shabiel/ewd-vista-viewer.git"
+  },
+  "devDependencies": {
+    "eslint": "",
+    "eslint-plugin-json": ""
+  },
+  "ewdVista": {
+    "parentModule": "ewd-vista",
+    "name": "VistA Internals Viewer",
+    "htmlName": "vistaViewer",
+    "sortOrder": "60",
+    "securityKey": "XUPROG"
+  }
+}

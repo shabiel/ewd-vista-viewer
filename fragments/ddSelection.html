@@ -1,0 +1,55 @@
+<div > 
+	<div class="panel panel-primary ">
+			
+		<div class="panel-heading">
+			<h3 class="panel-title">Select Data Dictionary</h3>
+		</div>
+		
+		<div class="panel-body ">						
+			<form class="form-inline" role="form" id="formDDSelection">			
+				<div class="row">
+					<div class="form-group">
+						<label for="ddFileFrom">Number between</label>					
+						<input type="text" class="form-control" id="ddFileFrom" placeholder="from"/>
+						
+						<label for="ddFileTo">and</label>
+						<input type="text"  class="form-control" id="ddFileTo" placeholder="to"/>	
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group">
+						<label for="ddNameStart">Name starts with</label>
+						<input type="text"  class="form-control" id="ddNameStart" placeholder="starts"/>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group ">
+						<label for="ddNameContain">Name contains</label>
+						<input type="text" class="form-control" id="ddNameContain" placeholder="contains"/>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group ">								
+						<label for="ddGlobal" >Stored in global</label>							
+						<input type="text"  class="form-control" id="ddGlobal" placeholder="global"/>
+					</div>
+				</div>
+			
+				<div >
+					<button type="submit" class="btn btn-primary" id="btnShowDDList" 											
+							data-loading-text="Searching...">Search for DD(s)									
+					</button>
+				</div>
+		
+			</form>
+								
+			<div class="scrollable-list" id="ddList">
+			</div>
+											
+		</div>
+	</div>	
+
+</div> <!-- left pane -->

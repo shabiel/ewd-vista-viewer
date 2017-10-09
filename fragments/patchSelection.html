@@ -1,0 +1,39 @@
+<div>
+	<div class="panel panel-primary ">
+			
+		<div class="panel-heading">
+			<h3 class="panel-title">Select VistA Patch</h3>
+		</div>
+		
+		<div class="panel-body ">						
+			<form class="form-inline" role="form" id="formSelection">			
+
+				
+				<div class="row">
+					<div class="form-group">
+						<label for="nameStart">Name starts with</label>
+						<input type="text"  class="form-control" id="patchNameStart" placeholder="starts"/>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group ">
+						<label for="nameContain">Name contains</label>
+						<input type="text" class="form-control" id="patchNameContain" placeholder="contains"/>
+					</div>
+				</div>
+			
+				<div >
+					<button type="submit" class="btn btn-primary" id="btnShowPatchList" 											
+							data-loading-text="Searching...">Search for Patch(es)									
+					</button>
+				</div>
+		
+			</form>
+								
+			<div class="scrollable-list" id="patchList">
+			</div>
+											
+		</div>
+	</div>
+</div>	

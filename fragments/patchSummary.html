@@ -1,0 +1,53 @@
+	<div class="panel panel-primary">				
+		<div class="panel-heading">
+			<a class="close" id="PatchSummaryClose"  >X</a>
+			<h1 class="panel-title" id="PatchSummaryName"></h1>				
+		</div>
+		
+		<div class="panel-body" >
+
+			<ul class="nav nav-tabs">
+			  <li class="active"><a href="#tabPatchComponents" data-toggle="tab">Components</a></li>
+			  <li><a href="#tabPatchDD" data-toggle="tab">Files</a></li>
+			  <li><a href="#tabPatchGeneral" data-toggle="tab">General</a></li>
+			</ul>
+			
+			<div class="tab-content" id="patchContent">
+				<div class="tab-pane active" id="tabPatchComponents">
+					<div id="patchComponents"> </div>
+					<div class="panel panel-info" id="patchComponentList" >
+						<div class="panel-heading" id="patchComponentListTitle">
+						</div>	
+						<div class="panel-body scrollable-result" id="patchComponentListBody" >
+						</div>
+					</div>
+				</div>
+		
+				<div class="tab-pane" id="tabPatchDD">
+					<div id="patchDDs"> </div>
+						<div class="panel panel-info" id="patchDDList" >
+							<div class="panel-heading" id="patchDDListTitle">
+							</div>	
+							<div class="panel-body scrollable-dd-result" id="patchDDListBody" >
+							</div>
+						</div>	
+				</div>
+				
+				<div class="tab-pane" id="tabPatchGeneral">
+					<p><a class="btn-link" id="patchDescriptionLink">Description</a></p>
+					
+					<p><a class="btn-link" id="patchRequiredLink">Required Patches</a></p>
+					
+					<strong>Date Distributed</strong><p id="patchDateDistributed"></p>
+					<strong>Pre-Install Routine</strong><p id="patchPeInstallRoutine"></p>
+					<strong>Post-Install Routine</strong><p id="patchPostInstallRoutine"></p> 
+					<strong>Environment Check Routine</strong><p id="patchEnvironmentCheckRoutine"></p> 
+					<strong>Pre-Transportation Routine</strong><p id="patchPreTransportationRoutine"></p> 
+				
+
+						
+				</div>
+			</div>
+		</div>
+		
+	</div>
