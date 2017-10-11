@@ -12,9 +12,17 @@
     "type": "git",
     "url": "git+https://github.com/shabiel/ewd-vista-viewer.git"
   },
+  "scripts": {
+    "build:browserify": "browserify ./client/app.js | node_modules/uglify-es/bin/uglifyjs > ./www/assets/javascripts/vistaViewer.js",
+    "build": "npm run build:browserify"
+  },
   "devDependencies": {
+    "datatables.net": "^1.10.16",
+    "datatables.net-bs": "^1.10.16",
+    "envify": "^4.1.0",
     "eslint": "",
-    "eslint-plugin-json": ""
+    "eslint-plugin-json": "",
+    "uglifyify": "^4.0.4"
   },
   "ewdVista": {
     "parentModule": "ewd-vista",
